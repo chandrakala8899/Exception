@@ -1,9 +1,8 @@
 package Exception;
 
-public class PaymentException extends  Exception{
+public class PaymentException extends  Exception {
     int remainingSeats;
     String code;
-
     public String getCode() {
         return code;
     }
@@ -12,8 +11,6 @@ public class PaymentException extends  Exception{
     }
     public PaymentException(String code, String megssage) {
         super(megssage);
-        this .code = code;
-
-
+        this.code = code;
     }
 }

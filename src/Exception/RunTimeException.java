@@ -1,13 +1,15 @@
 package Exception;
 
 public class RunTimeException extends RuntimeException{
-    String otp;
+    String code;
 
-    public RunTimeException(String otp) {
-        this.otp = otp;
+    public RunTimeException(String code,String message) {
+        super(message);
+        this.code = code;
     }
 
-    public String getOtp() {
-        return otp;
+    public String getCode() {
+
+        return code;
     }
 }

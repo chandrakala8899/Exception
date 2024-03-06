@@ -1,9 +1,9 @@
 package Exception;
 
-public enum ErrorCode {
+public enum ErrorCode{
 
-    Payment_failed("Error Code_","401"),
-    payment_failed("invalidMobibleNumber","402");
+    Payment_failed(" payment failed","401"),
+   login_failed_1("invalidotp","402");
     String message;
     String code;
 
@@ -18,7 +18,7 @@ public enum ErrorCode {
 
      ErrorCode(String message,String code){
 
-        this .message = message;
+        this.message = message;
         this.code = code ;
     }
 
